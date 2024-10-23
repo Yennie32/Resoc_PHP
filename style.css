@@ -1,0 +1,342 @@
+body {
+	background-color: #ffdbb5;
+	font-family: Montserrat;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color : #603F26;
+}
+
+body > header {
+	border-radius: 25px;
+	font-family: Montserrat;
+	background-color: #603F26;
+	display: flex;
+	width: 80em;
+	margin: 0 auto 2em auto;
+	padding: 0;
+}
+body > header img {
+	height: 5em;
+}
+body > header #menu {
+	display: flex;
+	width: 50%;
+	align-items: stretch;
+}
+body > header #menu a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFDBB5;
+	flex: 1;
+	text-align: center;
+	padding-top: 2em;
+}
+body > header a:hover {
+	background-color: #6C4E31;
+	border-radius: 25%;
+}
+body > header ul {
+	list-style: none;
+}
+body > header #user {
+	margin-left: auto;
+	flex: 0.2;
+}
+body > header #user > a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFDBB5;
+	display: block;
+	text-align: center;
+	padding: 2em 0;
+	width: 100%;
+}
+body > header #user ul {
+	display: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	margin-left: -5em;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	z-index: 1;
+}
+body > header #user ul li a {
+	background-color: #603F26;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFDBB5;
+	display: block;
+	width: 10em;
+	padding: 1em;
+
+}
+body > header #user:hover ul {
+	display: block;
+}
+
+#wrapper {
+	display: flex;
+	width: 80em;
+	margin: 0 auto 2em auto;
+}
+
+.wrapper-login {
+	flex-direction: column;
+}
+
+#wrapper aside {
+	color : #603F26;
+	background-color: #FFEAC5;
+	flex: 1;
+	padding: 1em;
+	border-radius: 1em;
+}
+/* Cette règle s'applique à toutes les images dans #wrapper aside */
+#wrapper aside img {
+	border-radius: 75px;
+	display: block;
+	width: 50%;
+	margin: 0 auto; /* Centre l'image horizontalement */
+	height: auto;
+}
+
+/* Cette règle s'applique uniquement à l'image avec l'ID #login-img */
+#wrapper aside img#login-img {
+	background-color: #6c4e31;
+	width: 40%;
+	height: auto;
+	margin: 0;
+}
+
+#wrapper main {
+	flex: 3;
+	padding-left: 1em;
+	height: 80vh;
+	/* overflow-y:  scroll; */
+}
+#wrapper main article {
+	color: #603F26;
+	background-color: #FFEAC5;
+	padding: 1em;
+	margin-bottom: 1em;
+	border-radius: 1em;
+}
+#wrapper main article h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 1em;
+}
+#wrapper main article time {
+	float: left;
+}
+#wrapper main article address {
+	text-align: right;
+	margin-bottom: 1em;
+}
+#wrapper main article p {
+	margin: 0;
+}
+#wrapper main article footer {
+	margin-top: 1em;
+	text-align: right;
+}
+#wrapper main article footer small {
+	float: left;
+}
+
+#wrapper.admin {
+	flex-direction: row-reverse;
+}
+#wrapper.admin aside {
+	flex: 1;
+	margin-left: 1em;
+	border-radius: 0;
+	padding: 0;
+}
+#wrapper.admin main {
+	flex: 2;
+	background-color: #fff;
+	border-radius: 0;
+	padding: 0;
+}
+#wrapper.admin h2 {
+	text-align: center;
+}
+#wrapper.admin h3 {
+	margin: 0;
+}
+#wrapper.admin nav {
+	text-align: right;
+}
+#wrapper.admin article {
+	border: 1px solid #ddd;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
+}
+#wrapper.admin article p {
+	float: left;
+	margin: 0;
+}
+
+.parameters dl dt {
+	float: left;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+.parameters dl dd {
+	margin-left: 15em;
+	line-height: 1.5em;
+}
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.contacts article {
+	width: 25em;
+	height: 7em;
+	margin-right: 1em;
+}
+.contacts article img {
+	float: right;
+	height: 5em;
+}
+
+pre {
+	color: #aaa;
+}
+
+#create-post-input {
+	background-color: #603F26;
+	color: #FFDBB5;
+	font-weight: bold;
+	border-radius: 25px;
+}
+#deconnexion {
+	background-color: #603F26;
+	font-family: Montserrat;
+	color: #FFDBB5;
+	font-weight: bold;
+	border-radius: 25px;
+	margin: 1em;
+}
+/* POST BUTTON */
+button {
+	background-color: #603F26;
+	font-family: Montserrat;
+	color: #FFDBB5;
+	font-weight: bold;
+	border-radius: 25px;
+}
+button:hover{
+	background-color: #FFDBB5;
+	color: #603F26;
+}
+.post-form {
+	display: flex;
+	flex-direction: column;  /* Aligner les éléments verticalement */
+	justify-content: flex-start;  /* Aligner le contenu vers le haut */
+	align-items: center; /* Centrer les éléments horizontalement */
+	width: 100%; /* Adapte la largeur au besoin */
+}
+
+/* PAGE LOGIN */
+
+	#wrapper-login main {
+		overflow-y: hidden; /* Hide vertical scrollbar */
+		overflow-x: hidden; /* Hide horizontal scrollbar */
+	}
+
+	#wrapper #aside-login {
+		background-color: #6c4e31;
+		display: flex;
+		align-items: center; /* Centre l'image et le texte verticalement */
+		justify-content: flex-start; /* Aligne le contenu sur la gauche */
+		gap: 20px; /* Espacement entre l'image et le texte */
+		text-align: left; /* Le texte reste aligné à gauche */
+
+		 h1, p {
+			color: #ffdbb5;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 7em;
+		}
+		p {
+			font-size: 2em;
+		}
+	}
+
+	.login-form {
+		display: flex;
+		justify-content: center; /* Centrer horizontalement */
+		align-items: center; /* Centrer verticalement */
+	}
+
+	#wrapper #article-login {
+		background-color: #6c4e31;
+		color: #ffdbb5;
+		margin-top: 2em;
+		flex: 2;
+
+		dl {
+			display: flex;
+			flex-direction: column;
+			align-items: center; /* Aligne les labels et inputs en colonne */
+			width: 50%; /* Occupe toute la largeur du conteneur */
+		}
+		label {
+			text-align: center; /* Aligne le texte du label à droite */
+			margin-bottom: 5px; /* Espacement en bas du label */
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 4em;
+			text-align: center;
+			padding-top: 0.5 em;
+		}
+		input[type="email"],
+		input[type="password"] {
+			width: 50%; /* Champs prennent toute la largeur */
+			padding: 10px; /* Ajoute un peu de padding pour le style */
+			margin-bottom: 15px; /* Espacement en bas des champs */
+			border-radius: 25px;
+			padding : auto;
+		}
+		.login-input {
+			font-family: Montserrat;
+			font-size: 1.5em !important;
+		}
+
+		#connexion {
+			padding: 1rem;
+			font-size: 2em;
+			font-weight: bold;
+			font-family: Montserrat;
+			color: #FFEAC5;
+			background-color: #422c1b;
+			border-radius: 25px;
+			width: 50%;
+			box-shadow: inset 5px 5px 5px black;
+
+		}
+	#connexion:hover {
+		background-color: #603F26; /* Change la couleur au survol */
+		color: #FFDBB5;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
